@@ -35,9 +35,11 @@ button:hover{
     background-color: $primary-color-hover;
 }
 .container-main {
+    grid-template-columns: repeat(3, 1fr);
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
     justify-items: center;
+    align-items: center;
+    height: 700px;
     .card {
         width: 300px;
         border: 1px solid lightgray;

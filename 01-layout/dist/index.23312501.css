@@ -32,8 +32,9 @@ button:hover {
 }
 
 .container-main {
-  grid-template-columns: 1fr 1fr 1fr;
-  justify-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  place-items: center;
+  height: 700px;
   display: grid;
 }
 
