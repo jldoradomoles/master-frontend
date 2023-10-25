@@ -1,0 +1,22 @@
+21
+39C:\repos\master-frontend\01-layout\dist133426407116012827 1
+38C:\repos\master-frontend\01-layout\src133426416498775553 1
+47C:\repos\master-frontend\01-layout\node_modules133426416498764019 1
+98C:\repos\master-frontend\01-layout\node_modules\@parcel\source-map\parcel_sourcemap_node\artifacts133426416493190407 1
+52C:\repos\master-frontend\01-layout\package-lock.json133426373581686097 0
+47C:\repos\master-frontend\01-layout\package.json133426373581704125 0
+49C:\repos\master-frontend\01-layout\src\index.html133426407038598048 0
+51C:\repos\master-frontend\01-layout\src\mystyle.scss133426407115302888 0
+55C:\repos\master-frontend\01-layout\node_modules\@parcel133426416495022042 1
+62C:\repos\master-frontend\01-layout\node_modules\ordered-binary133426416498279402 1
+68C:\repos\master-frontend\01-layout\node_modules\ordered-binary\.idea133426373563751729 1
+80C:\repos\master-frontend\01-layout\node_modules\ordered-binary\.idea\modules.xml133426373563778490 0
+87C:\repos\master-frontend\01-layout\node_modules\ordered-binary\.idea\ordered-binary.iml133426373562070123 0
+50C:\repos\master-frontend\01-layout\dist\index.html133426407039205124 0
+66C:\repos\master-frontend\01-layout\node_modules\@parcel\source-map133426416494311268 1
+88C:\repos\master-frontend\01-layout\node_modules\@parcel\source-map\parcel_sourcemap_node133426416494261044 1
+124C:\repos\master-frontend\01-layout\node_modules\@parcel\source-map\parcel_sourcemap_node\artifacts\index.win32-x64-msvc.node133426373566687871 0
+61C:\repos\master-frontend\01-layout\dist\01-layout.59712999.js133426400185138407 0
+65C:\repos\master-frontend\01-layout\dist\01-layout.59712999.js.map133426400185207909 0
+58C:\repos\master-frontend\01-layout\dist\index.23312501.css133426407115946572 0
+62C:\repos\master-frontend\01-layout\dist\index.23312501.css.map133426407115992865 0
