@@ -2,44 +2,43 @@ body {
   box-sizing: border-box;
 }
 
-.container-main {
-  flex-flow: column wrap;
-  align-items: center;
-  gap: .5rem;
+.container-main .container-menu {
+  background-color: #297178;
+  flex-wrap: wrap;
+  width: -moz-fit-content;
+  width: fit-content;
   display: flex;
 }
 
-.container-main .box {
-  border-radius: 4px;
-  width: 6rem;
-  height: 6rem;
-  padding: .5rem;
+.container-main .menu-item:hover {
+  background-color: #1a4f54;
 }
 
-.container-main .color-base {
-  background-color: #78c9ef;
+.container-main .menu-item {
+  color: #fff;
+  width: 100px;
+  padding: 3px 10px;
 }
 
-.container-main .color-important {
-  background-color: #0a4a65;
+.container-main .text-header {
+  font-size: 17px;
 }
 
-.container-main .color-warning {
-  background-color: red;
-}
+@media (width <= 520px) {
+  .container-main {
+    border: 5px solid #000;
+    padding: 7px;
+  }
 
-.container-main .font-main {
-  font-family: serif;
-}
+  .container-main .text-header {
+    font-size: 23px;
+    font-weight: bolder;
+  }
 
-.container-main .font-secondary {
-  font-family: fantasy;
-}
-
-.container-main .box-shadow {
-  border: .1rem solid #000;
-  border-radius: 4px;
-  box-shadow: -5px 5px #888;
+  .container-main .text-menu {
+    font-size: 17px;
+    font-weight: 600;
+  }
 }
 
 /*# sourceMappingURL=index.23312501.css.map */

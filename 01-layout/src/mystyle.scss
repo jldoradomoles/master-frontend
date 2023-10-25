@@ -1,45 +1,45 @@
-@import './tema1.scss';
+$primary-color: #297178;
+$primary-color-hover: #1a4f54;
 body {
     box-sizing: border-box;
 }
 
 .container-main {
-    flex-flow: column wrap;
-    display: flex;
-    align-items: center;
-    gap: .5rem;
-    .box {
-        width: 6rem;
-        height: 6rem;
-        border-radius: $border-radius;
-        padding: 0.5rem;
-    }
-    .color-base {
-        background-color: $color-primary;
+
+    .container-menu {
+        background-color: $primary-color;
+        display: flex;
+        width: fit-content;
+        flex-wrap: wrap;
     }
 
-    .color-important {
-        background-color: $color-important;
+    .menu-item:hover {
+        background-color: $primary-color-hover;
     }
 
-    .color-warning {
-        background-color: $color-warning;
+    .menu-item {
+        width: 100px;
+        padding: 3px 10px;
+        color: white;
     }
 
-    .font-main {
-        font-family: $font-main;
+    .text-header {
+        font-size: 17px;
     }
 
-    .font-secondary {
-        font-family: $font-secondary;
-
+    @media (max-width: 520px) {
+        border: solid 5px black;
+        padding: 7px;
+        .text-header {
+            font-size: 23px;
+            font-weight: bolder;
+        }
+        .text-menu {
+            font-size: 17px;
+            font-weight: 600;
+        }
     }
-
-    .box-shadow {
-        border: solid .1rem black;
-        border-radius: $border-radius;
-        box-shadow: $box-shadow;
-    }
+   
 }
 
 
