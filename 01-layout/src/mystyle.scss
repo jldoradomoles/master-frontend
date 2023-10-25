@@ -1,44 +1,86 @@
-$primary-color: #297178;
-$primary-color-hover: #1a4f54;
+$primary-color: seagreen;
+$primary-color-hover: rgb(34, 172, 94);
+
 body {
     box-sizing: border-box;
+    font-family: sans-serif;
 }
 
+img {
+    width: -webkit-fill-available;
+    border-radius: 7px 7px 0px 0px;
+}
+
+h3 {
+    margin: 0;
+    font-size: 20px;
+
+}
+
+p {
+    font-weight: 500;
+    font-size: 16px;
+}
+
+button {
+    background-color: seagreen;
+    color: white;
+    width: 100%;
+    border: none;
+    border-radius: 2px;
+    padding: 12px 5px;
+}
+
+button:hover{
+    background-color: $primary-color-hover;
+}
 .container-main {
-
-    .container-menu {
-        background-color: $primary-color;
-        display: flex;
-        width: fit-content;
-        flex-wrap: wrap;
-    }
-
-    .menu-item:hover {
-        background-color: $primary-color-hover;
-    }
-
-    .menu-item {
-        width: 100px;
-        padding: 3px 10px;
-        color: white;
-    }
-
-    .text-header {
-        font-size: 17px;
-    }
-
-    @media (max-width: 520px) {
-        border: solid 5px black;
-        padding: 7px;
-        .text-header {
-            font-size: 23px;
-            font-weight: bolder;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    .card {
+        width: 300px;
+        border: 1px solid lightgray;
+        box-shadow: 2px 2px 8px 4px #d3d3d3d1;
+        border-radius: 7px;
+        transition: 1s ease;
+        .container-text{
+            margin: 15px;
         }
-        .text-menu {
-            font-size: 17px;
+    
+        .estado {
+            font-size: 13px;
             font-weight: 600;
         }
+    
+        .fecha {
+            color: $primary-color;
+        }
+    
+        .container-fecha {
+            justify-content: end;
+            display: flex;
+        }
+
+        @keyframes zoom-in-zoom-out {
+            0% {
+              transform: scale(1, 1);
+            }
+            50% {
+              transform: scale(1.2, 1.2);
+            }
+            100% {
+              transform: scale(1.2, 1.2);
+            }
+          }
+
+        &:hover {
+            transform : scale(1.1);
+
+        }
     }
+    
+    
    
 }
 
