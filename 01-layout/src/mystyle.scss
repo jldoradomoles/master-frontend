@@ -1,94 +1,183 @@
-$primary-color: seagreen;
-$primary-color-hover: rgb(34, 172, 94);
+$color-primary: #CDDF1B;
+$color-white: white;
+$color-footer: #F9FBE3;
+$color-nav: #393E06;
+$color-main: #F1F1F1;
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+ }
 
 body {
-    box-sizing: border-box;
     font-family: sans-serif;
-}
-
-img {
-    width: -webkit-fill-available;
-    border-radius: 7px 7px 0px 0px;
-}
-
-h3 {
     margin: 0;
-    font-size: 20px;
-
+    padding: 0;
 }
-
 p {
-    font-weight: 500;
-    font-size: 16px;
+    margin: 0;
 }
 
-button {
-    background-color: seagreen;
-    color: white;
-    width: 100%;
-    border: none;
-    border-radius: 2px;
-    padding: 12px 5px;
+h1 {
+    font-size: 20px;
 }
 
-button:hover{
-    background-color: $primary-color-hover;
+nav {
+    background-color: $color-nav;
 }
-.container-main {
-    grid-template-columns: repeat(3, 1fr);
-    display: grid;
-    justify-items: center;
+
+main {
+    background-color: $color-main;
+    flex: 1;
+    padding: 20px 40px;
+    @media (max-width: 768px) {
+        padding: 15px 0;
+    }
+}
+
+
+
+
+.toolbar {
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-    height: 700px;
-    .card {
-        width: 300px;
-        border: 1px solid lightgray;
-        box-shadow: 2px 2px 8px 4px #d3d3d3d1;
-        border-radius: 7px;
-        transition: 1s ease;
-        .container-text{
-            margin: 15px;
-        }
-    
-        .estado {
-            font-size: 13px;
-            font-weight: 600;
-        }
-    
-        .fecha {
-            color: $primary-color;
-        }
-    
-        .container-fecha {
-            justify-content: end;
+    margin: 0 0.5rem;
+    height: 2.4rem;
+    @media (max-width: 768px) {
+        display: none;
+    }
+}
+
+.menu-title {
+    justify-content: center;
+    display: flex;
+    padding-top: 0.5rem;
+    p {
+        color: $color-white;
+        font-size: 17px;
+        font-weight: 600;
+    } 
+    @media (max-width: 768px) {
+        display: none;
+    }
+}
+
+.menu-movil {
+    justify-content: center;
+    display: flex;
+    background-color: $color-nav;
+    ul {
+        list-style: none;
+        display: flex;
+        gap: 15px;
+        margin: 0;
+        padding: 5px;
+    }
+    li{
+        background: #f9fbe3;
+        color: black;
+        padding: 5px 10px;
+    }
+    @media (min-width:768px){
+        display: none;
+    }
+
+}
+
+.page-title {
+    display: flex;
+    background: $color-primary; 
+    color: $color-white;
+    padding-left: 0.5rem;
+}
+
+.page-container{
+    height: 100vh;
+    display: flex;
+    @media (max-width:768px){
+        display: block;
+
+    }
+}
+
+.menu-container {
+    background-color: $color-nav;
+    min-width: 170px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    ul {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        li {
+            height: 42px;
+            background-color: #F9FBE3;
             display: flex;
-        }
-
-        @keyframes zoom-in-zoom-out {
-            0% {
-              transform: scale(1, 1);
-            }
-            50% {
-              transform: scale(1.2, 1.2);
-            }
-            100% {
-              transform: scale(1.2, 1.2);
-            }
-          }
-
-        &:hover {
-            transform : scale(1.1);
-
+            align-items: center;
+            padding-left: 0.5rem;
+            border: 0.1px solid #00000029;
         }
     }
-    
-    
-   
+
+    @media (max-width:768px){
+        display: none;
+
+    }
 }
 
+.footer {
+    background-color: $color-footer;
+    padding: 0.5rem;
+    z-index: 1;
+    position: sticky;
+}
 
+.list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px , 1fr));
+    gap: 20px;
+    justify-items: center;
+    align-items: center;
+    .card {
+        width: 200px;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: solid 1px black;
+        border-radius: 5px;
+        background-color: white;
+        gap: 7px;
+        .member-name {
+            text-align: center;
+            margin: 0 6px;
+        }
+        img {
+            border-radius: 50px;
+            width: 100px;
+            height: 100px;
+        }
+        @media (max-width:768px){
+            width: 90%;
+            flex-direction: row;
+            justify-content: start;
+            padding-left: 1rem;
+            border: none;
+            border-radius: inherit;
+         }
+    }
 
+    @media (max-width:768px){
+       grid-template-columns: 1fr;
+       gap: 5px;
 
+    }
+}
 
 
 
