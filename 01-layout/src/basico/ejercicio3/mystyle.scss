@@ -1,0 +1,50 @@
+$primary-color: #297178;
+$primary-color-hover: #1a4f54;
+body {
+    box-sizing: border-box;
+}
+
+.container-main {
+
+    .container-menu {
+        background-color: $primary-color;
+        display: flex;
+        width: fit-content;
+        flex-wrap: wrap;
+    }
+
+    .menu-item:hover {
+        background-color: $primary-color-hover;
+    }
+
+    .menu-item {
+        width: 100px;
+        padding: 3px 10px;
+        color: white;
+    }
+
+    .text-header {
+        font-size: 17px;
+    }
+
+    @media (max-width: 520px) {
+        border: solid 5px black;
+        padding: 7px;
+        .text-header {
+            font-size: 23px;
+            font-weight: bolder;
+        }
+        .text-menu {
+            font-size: 17px;
+            font-weight: 600;
+        }
+    }
+   
+}
+
+
+
+
+
+
+

@@ -1,0 +1,201 @@
+$primary-color-red: red;
+$primary-color-yellow: yellow;
+$primary-color-blue: blue;
+$primary-text-color: Lightgrey;
+body {
+    box-sizing: border-box;
+    height: 100vh;
+    display: flex;  
+}
+span {
+    color: white;
+}
+
+.container-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100vw;
+}
+
+.container-flex {
+    flex-wrap: wrap;
+    justify-content: center;
+    display: flex;
+    margin: 5px;
+}
+
+.box {
+    padding: 2rem 1rem;
+    border-radius: 0.4rem;
+    padding: 2rem 1rem;
+    margin: 0.1rem;
+    //Color base rojo
+    &.color-box-text{
+        font-size: 1.5rem;
+    }
+    &.base-color {
+        background-color: $primary-color-red;
+    }
+    &.darken-1 {
+        background-color: darken($primary-color-red, 10%);
+        span {
+            color: darken($primary-text-color, 10%);
+        }
+    }
+    &.darken-2 {
+        background-color: darken($primary-color-red, 20%);
+        span {
+            color: darken($primary-text-color, 20%);
+        }
+    }
+    &.darken-3 {
+        background-color: darken($primary-color-red, 30%);
+        span {
+            color: darken($primary-text-color, 30%);
+        }
+    }
+    &.darken-4 {
+        background-color: darken($primary-color-red, 40%);
+        span {
+            color: darken($primary-text-color, 40%);
+        }
+    }
+    &.lighten-1 {
+        background-color: lighten($primary-color-red, 10%);
+        span {
+            color: lighten($primary-text-color, 10%);
+        }
+    }
+    &.lighten-2 {
+        background-color: lighten($primary-color-red, 20%);
+        span {
+            color: lighten($primary-text-color, 20%);
+        }
+    }
+    &.lighten-3 {
+        background-color: lighten($primary-color-red, 30%);
+        span {
+            color: lighten($primary-text-color, 30%);
+        }
+    }
+    &.lighten-4 {
+        background-color: lighten($primary-color-red, 40%);
+        span {
+            color: lighten($primary-text-color, 40%);
+        }
+    }
+    // Color base amarillo
+    &.yellow {
+        &.base-color {
+            background-color: $primary-color-yellow;
+        }
+        &.darken-1 {
+            background-color: darken($primary-color-yellow, 10%);
+            span {
+                color: darken($primary-text-color, 10%);
+            }
+        }
+        &.darken-2 {
+            background-color: darken($primary-color-yellow, 20%);
+            span {
+                color: darken($primary-text-color, 20%);
+            }
+        }
+        &.darken-3 {
+            background-color: darken($primary-color-yellow, 30%);
+            span {
+                color: darken($primary-text-color, 30%);
+            }
+        }
+        &.darken-4 {
+            background-color: darken($primary-color-yellow, 40%);
+            span {
+                color: darken($primary-text-color, 40%);
+            }
+        }
+        &.lighten-1 {
+            background-color: lighten($primary-color-yellow, 10%);
+            span {
+                color: lighten($primary-text-color, 10%);
+            }
+        }
+        &.lighten-2 {
+            background-color: lighten($primary-color-yellow, 20%);
+            span {
+                color: lighten($primary-text-color, 20%);
+            }
+        }
+        &.lighten-3 {
+            background-color: lighten($primary-color-yellow, 30%);
+            span {
+                color: lighten($primary-text-color, 30%);
+            }
+        }
+        &.lighten-4 {
+            background-color: lighten($primary-color-yellow, 40%);
+            span {
+                color: lighten($primary-text-color, 40%);
+            }
+        }
+    }
+    // Color base azul
+    &.blue {
+        &.base-color {
+            background-color: $primary-color-blue;
+        }
+        &.darken-1 {
+            background-color: darken($primary-color-blue, 10%);
+            span {
+                color: darken($primary-text-color, 10%);
+            }
+        }
+        &.darken-2 {
+            background-color: darken($primary-color-blue, 20%);
+            span {
+                color: darken($primary-text-color, 20%);
+            }
+        }
+        &.darken-3 {
+            background-color: darken($primary-color-blue, 30%);
+            span {
+                color: darken($primary-text-color, 30%);
+            }
+        }
+        &.darken-4 {
+            background-color: darken($primary-color-blue, 40%);
+            span {
+                color: darken($primary-text-color, 40%);
+            }
+        }
+        &.lighten-1 {
+            background-color: lighten($primary-color-blue, 10%);
+            span {
+                color: lighten($primary-text-color, 10%);
+            }
+        }
+        &.lighten-2 {
+            background-color: lighten($primary-color-blue, 20%);
+            span {
+                color: lighten($primary-text-color, 20%);
+            }
+        }
+        &.lighten-3 {
+            background-color: lighten($primary-color-blue, 30%);
+            span {
+                color: lighten($primary-text-color, 30%);
+            }
+        }
+        &.lighten-4 {
+            background-color: lighten($primary-color-blue, 40%);
+            span {
+                color: lighten($primary-text-color, 40%);
+            }
+        }
+    }
+   
+
+
+    
+}
